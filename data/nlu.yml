@@ -1,0 +1,1187 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - what is up
+    - how far
+    - what's up
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - good day
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - thank you so much for the information
+    - thanks
+    - thanks a lot
+    - thanks for the info
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - ok
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who is it?
+    - who are you?
+    - what do you do?
+
+
+- intent: faq/ask_ncair
+  examples: |
+    - What's NCAIR?
+    - what does ncair stand for
+    - who is ncair
+    - what does ncair do
+    - is ncair an agency of govt
+    - ncair agency of government?
+    - is the centre an agency of government?
+    - ncair ministry 
+    - is ncair a centre of government
+    - is the centre a ministry
+    - ministry of government?
+
+- intent: faq/ask_nitdaacronm
+  examples: |
+    - What's the acronym nitda?
+    - what does nitda stand for
+    - what does NITDA mean
+    - meaning of NITDA
+
+- intent: faq/ask_nitda
+  examples: |
+    - What's nitda?
+    - who is nitda
+    - what does nitda do
+    - is nitda an agency of govt
+    - nitda agency of government?
+    - is the agency an agency of government?
+    - nitda ministry 
+    - is nitda a agency of government
+    - is the agency a ministry
+    - ministry of government?
+    - what happens at nitda?
+    - what goes on at nitda
+    - what do you do at nitda
+    - what do you do in the agency
+  
+- intent: faq/ask_email
+  examples: |
+    - what's your email address
+    - your email please
+    - email adress
+    - nitda email adress
+    - how can i contact you via emal
+    - how to write to nitda
+    - how to write to the agency
+
+- intent: faq/ask_phone
+  examples: |
+    - what's your phone number
+    - your contact numbers, please
+    - contact numbrs plz
+    - who should i call for help
+    - how can i contact you via phone
+    - who should i call to ask for help
+    - numbers to call for enquiries
+    - helpline
+
+- intent: faq/ask_complain
+  examples: |
+    - i have problem with the registration for domain
+    - my domain registration failed, who should i contyact
+    - registration challengies
+    - I couldn't register my company
+    - having issues registring my business
+
+- intent: faq/ask_opentoeveryone
+  examples: |
+    - Is NITDA open to everyone?
+    - who can visit the agency
+    - is nitda open to the pubic
+
+    - If I have research, can I come in freely?
+
+- intent: faq/ask_applyjob
+  examples: |
+    - How can I apply for a job at NITDA?
+    - I want to apply for a job at nitda
+    - I want to apply for a job at the agency
+    - any vacancy at nitda?
+    - do you have a job vacancies
+    - any job?
+    - job offers
+    - vacancy offer
+    - Is NITDA recruiting?
+    - is nitda hiring
+    - is the agency hiring
+    - can i be hired
+    - how to apply for work at nitda
+    - is their available work
+    - nitda jobs
+    - nitda works
+    - is there job vacancies
+    - is nitda recruiting
+    - is work available
+    - are you recruiting
+    - are you hiring
+    - how do i apply for job at nitda
+
+- intent: faq/ask_work
+  examples: |
+    - Who can work at nitda?
+    - what kind of professionals does nitda hire
+    - who does nitda give jobs to
+    - who does nitda offer jobs to
+    - nitda jobs requirements
+
+- intent: faq/ask_internship
+  examples: |
+    - Can I apply for an internship at NITDA?
+    - how can i join internship
+    - how to be an intern at the agency
+    - how do i join internship program
+    - does nitda accepts interns
+
+- intent: faq/ask_assist
+  examples: |
+    - How does NITda assist start-ups in Nigeria?
+    - can my startup get help from the nitda
+    - can my startup be funded
+    - can my idea get support
+    - can my be incubated
+    - programs for startups
+    - do you have programs for start ups
+ 
+- intent: faq/ask_funding
+  examples: |
+    - I have an innovative idea; can I get funding to develop it?
+    - can my idea be developed at the centre
+- intent: faq/ask_training_fee
+  examples: |
+    - Are NITDA training free?
+    - Is there any form of payment for the Program?
+    - are kids or parents to pay for a fee for nitda programs
+    - how much does it cost?    
+
+- intent: faq/ask_website
+  examples: |
+    - The website link of NITDA?
+    - website of nitda
+    - site nitda
+    - nitda web
+    - link me to nitda
+
+- intent: faq/ask_sell
+  examples: |  
+    - Can I sell my final year project to NITDA?
+
+- intent: faq/ask_elearning
+  examples: |
+    - Does your center provide materials and equipment for effective learning?
+    - Do you offer eLearning for the public?
+
+- intent: faq/ask_events
+  examples: |
+    - When is your next hackathon?
+    - When is your next bootcamp?
+    - upcoming events
+    - events
+    - your events
+    - your previous events
+    - what are your current events
+    - what are nitda current events
+    - what event is nitda currently hosting event
+    - when will you host your next events
+    - nitda next events
+    - nitda upcoming events
+
+
+- intent: faq/ask_events_requirements
+  examples: |
+    - What are the requirements for joining the hackathon?
+    - What are the requirements for joining the bootcamp?
+    - how to join bootcamp
+    - how to partake in hackathone
+    - participate in bootcamp
+    - participate in hackathone
+    - volunteer in your activities
+    - who can be part of your bootcamp
+    - how can i apply for sb4kids
+    - In What way can someone can apply for the SB4kids program?
+
+- intent: faq/ask_organize_training
+  examples: |
+    - Does NITDA organize any form of training for the public on ICT?
+
+- intent: faq/ask_accept_interns
+  examples: |
+    - Does NITDA accept Interns?
+    - do you accept interns
+    - does the agency entertain interns application
+    - does the agency entertain internship application
+
+- intent: faq/ask_students_program
+  examples: |
+    - Do you have any programs for students?
+    - I am a student. How can I get involved in your student programs?
+
+- intent: faq/ask_private_colaboration
+  examples: |
+    - Does NITDA collaborate with private companies?
+    - Does NITDA collaborate with other goverment agencies, ministries, parastatals?
+    - can my private firm partner with nitda
+    - can a public institution partners with nitda
+    
+- intent: faq/ask_access_ncair_learning
+  examples: |
+    - How do I access NITDA Learning resources/materials?
+    - how to access NART resources
+
+- intent: faq/ask_help
+  examples: |
+    - Who should I call to ask for help at nitda?
+    - Who should I call to ask for help at agency?
+    - looking for assistance
+    - wanna make enquiries
+
+- intent: faq/ask_open_close_time
+  examples: |
+    - What's the opening and closing time of NITDA?
+    - What time can I visit NITDA?
+    - What time can I visit the center?
+    - when does the centre open and close for bussiness
+    - NITDA opening hours
+    - nitda working hours ?
+    - when does NITDA open for business
+    - how long can i stay at the centre
+    - how long is a visitor allowed to stay at NITDA
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food, drink
+    - What is 2 + 2?
+    - Who's the US President?
+    - what are you
+    - nigeria
+    - what kkk
+    - how iii
+    - when iiiii
+    - who
+    - how farrr
+    - abuja
+    - name 
+    - ertyuiodfghm,...ttyytyyyyu
+    - xyz
+    - any food for me
+    - rrtddjj
+    - nigeria
+    - africa
+    - I don't understand your answer
+    - I don't understand your response
+    - I don't understand your reply
+    - ministry
+    - ondi
+    - ncc
+    - fmcd
+    - economy
+    - ministry
+    - ondi
+    - ncc
+    - fmcd
+    - economy
+    - galaxy backbone
+    - nigcom sat
+    - nimc
+    - nipost
+    - police
+    - military
+    - security
+
+
+
+
+# SB4Kids program
+
+- intent: faq/ask_sb
+  examples: |
+    - what's sb4kids program
+    - whta SB4KIDS?
+    - sb4kids
+    - Nitda stem-bootcamp
+
+- intent: faq/ask_kidsprg
+  examples: |
+    - prgrams for children, kids
+    - kids,students prog
+    - what programs/events do you have for kids or students or pupils
+    - pupils' program
+    - do you have educational progrms for kids or students or pupils?
+
+- intent: faq/ask_online
+  examples: |
+    - do you offer online training for kids
+    - can kids take online classes
+    - How do i become part of the training?
+    - do you have online classes
+    - training onlne
+    - are you programs accessible online
+
+- intent: faq/ask_tour
+  examples: |
+    - Do you offer tour for children in primary and Secondary school?
+    - can schools apply for tour
+    - can my school come for a tour at the agency
+    - can my school come for a tour at the nitda
+    - can i tour the centre
+
+
+- intent: faq/ask_geo
+  examples: |
+    - Do you have SB4kids programs in other states of Nigeria?
+    - sb4kids run in other states?
+
+- intent: faq/ask_stsb4kids
+  examples: |
+    - What date do the SB4kids program start?
+    - when does sb4kids commence
+    - how lung does it run for?
+    - How do we know when to apply for SB4kids program?
+    - How do we know when to apply for stem101 program?
+    
+- intent: faq/ask_sb_acts
+  examples: |
+    - What are the various activities in the SB4kids program.
+    - what acts can a kid expects 
+    - any activity for sb4kids
+
+- intent: faq/ask_sb_ages
+  examples: |
+    - What are the required ages for children/Student that wants to apply?
+    - What program are available for kids under 8 years?
+    - is the event meant for pupils only?
+
+# # visitations
+- intent: faq/ask_aides
+  examples: |
+    - does NITDA have designated aides or guides for touring the facility?
+    - staffs to help tour the facility
+    - people to help me tor the agency
+    - can i tour the agency
+
+
+- intent: faq/ask_photo
+  examples: |
+    - is a visitor allowed to take photos or videos in the agency
+    - can i snap pics at the agency
+    - can videos be made in the facility
+- intent: faq/ask_work_interns
+  examples: |
+    - do you involve interns in day to day activities of the agency?
+    - do your interns work hand in hand with the fulltime staff on projects?
+
+
+# #internship
+
+- intent: faq/ask_acceptance
+  examples: |
+    - I have secured the internship position, what should be my next line of action?
+    - what next to do after being accepted as intern
+
+- intent: faq/ask_equipment
+  examples: |
+    - What facility do I need to have before I can intern in NITDA?
+    - what tool is needed for the internship, siwes
+
+- intent: faq/ask_sec
+  examples: |
+    - Can I intern after secondary school?
+    - Can I intern after high school?
+    - Can I intern as a corp member?
+    - Can I intern after university?
+
+- intent: faq/ask_comp
+  examples: |
+    - Is it compulsory to have background knowledge in coding before applying?
+    - do I have to have computer science
+    - does it only for engineering student?
+
+- intent: faq/ask_doc
+  examples: |
+    - What is the supporting document for Applying for the internship?
+    - what docs do i need to apply for internship, siwes, nan0internship, IT
+    - What are the procedures for Applying for Internship?
+
+- intent: faq/ask_inview
+  examples: |
+    - How is the interview process for internships like?
+    - what to expect at the interview?
+    - interview
+
+ #Mrs Omilade
+- intent: faq/ask_standard
+  examples: |
+    - WHAT DOES THE STANDARDS, GUIDELINES AND FRAMEWORKS DEPARTMENT (SGF) DO?
+    - what is sgf
+    - what is STANDARDS, GUIDELINES AND FRAMEWORKS DEPARTMENT
+    - who is STANDARDS, GUIDELINES AND FRAMEWORKS DEPARTMENT
+    - WHAT ARE THE FUNCTIONS OF THE SGF DEPARTMENT?
+
+
+- intent: faq/ask_reg
+  examples: | 
+    - HOW CAN I HAVE ACCESS TO NITDA REGULATORY INSTRUMENTS?
+    - regulations information
+
+- intent: faq/ask_units
+  examples: | 
+    - HOW MANY UNITS ARE THERE IN SGF DEPARTMENT OF NITDA?
+    - units at sgf
+    - sgf units
+- intent: faq/ask_nitdaunits
+  examples: | 
+    - HOW MANY UNITS ARE THERE IN NITDA
+    - DEPARTMENTs OF NITDA?
+    - units at the agency
+    - nitda units
+    - departments of nitda
+    - the depatartments of the National information technology development agency
+    - the depatartments of the National information technology development agency
+- intent: faq/ask_consumer_protection
+  examples: | 
+    - HOW DOES NITDA PROTECT CONSUMER OF IT PRODUCTS AND SERVICES?
+    - do you protect your customers
+
+- intent: faq/ask_nitda_comp
+  examples: | 
+    - HOW DO I MAKE COMPLAINTS TO NITDA AS AN AGRIEVED CONSUMER OF IT PRODUCTS AND SERVICES?
+    - who should i complain to about nitda services
+    - custmer care line
+    - your careline, please
+
+#Mr Kalio
+- intent: faq/ask_freInfo
+  examples: | 
+    - WHAT IS FREEDOM OF INFORMATION ACT, 2011 (FOIA, 2011)
+    - foi what
+    - FOI
+
+#Mr Kalio
+- intent: faq/ask_whenAct
+  examples: | 
+    - WHEN WAS THE FREEDOM OF INFORMATION ACT, 2011 ESTERBLISHED?
+    - when was foi establish
+    - when was foi created
+    - the reason for foi act, 2011
+    - why was the freedom of information act, 2011 esterblished?
+
+#Mr Kalio
+- intent: faq/ask_whyAct
+  examples: | 
+    - why the foi act 
+    - why the act
+    - the reason fo foi act
+  
+
+  #Mr Kalio
+- intent: faq/ask_what_Act
+  examples: | 
+    - What are the functions of Freedom of Information Unit (FOIU) in NITDA
+    - what does foiu mean to nitda 
+    - what does foiu do?
+    - why the foiu in nitda
+    - what is the responsibilities of the foiu in nitda?
+
+   #Mr Kalio
+- intent: faq/ask_why_FOIA_impo
+  examples: |
+    - Why FOIA important 
+    - what are the importance of foi to nigeria
+    - importance of freedom of information act to nigeria
+    - what is the benefit of freedom of info act
+
+
+   #Mr Kalio
+- intent: faq/ask_what_steps
+  examples: | 
+    - What are the steps for FOI request/application
+    - how to apply for foi
+    
+ 
+   #Mr Kalio
+- intent: faq/ask_benefits_FOI_NITDA
+  examples: | 
+    - What are the benefits of FOI to NITDA
+    - foi importance to nitda
+    - freedom of information benefits to the agency
+
+ #Mr Kalio
+- intent: faq/ask_how_sect_FOI
+  examples: | 
+    - How many Sections in Freedom of Information Act, 2011?
+    - FOI sections
+
+#Mr Oladokun            
+- intent: faq/ask_nitdef
+  examples: | 
+    - scholarshp
+    - what is nitda scholarship
+    - what is nitdef scholarship
+
+- intent: faq/ask_nitdef_form
+  examples: | 
+    - Does NITDEF Scholarship Scheme form require payment
+    - do i have to pay for the form
+    - scholarship fee
+
+- intent: faq/ask_nitdef_apply
+  examples: | 
+    - where can i apply for nitda scholarship
+    - How can I apply for the NITDEF Scholarship Scheme?
+    - how to apply for scholarship
+    - where to apply
+    - nitda scholarship application
+    - apply schorslship
+
+
+- intent: faq/ask_nitdef_qualify
+  examples: | 
+    - Who qualifies to apply for NITDEF Scholarship Scheme
+    - what category of people are eligible for nitda scholarship
+
+- intent: faq/ask_nitdef_cat
+  examples: | 
+    - Who are the categories of people that can apply for the scholarship?
+    - who can apply for nitdef
+    - am a graduate, can i get nitda scholarship
+    - i wanna further my education, can i be supported through a scholarship
+
+- intent: faq/ask_nitdef_exam
+  examples: | 
+    - What is the examination mode for the NITDEF Scholarship Scheme?
+    - what mode is the nitdef
+
+#Mr Amos
+- intent: faq/ask_roadmap
+  examples: | 
+    - Where can I access NITDA Strategic Road Map Action Plan?
+    - how to access srap document
+    - what's SRAP
+
+- intent: faq/ask_datedignaija
+  examples: | 
+    - digita naija date
+    - date for digital nigeria
+
+- intent: faq/ask_dignaija
+  examples: | 
+    - what's digital nigeria
+    - digital nigeria
+    - nigeria digital
+    - naija digital
+
+
+#Mr Yusuf
+- intent: faq/ask_nitda_acad
+  examples: | 
+    - Can I apply for NITDA academy outside Nigeria?
+    - am a nigerian living abroad, can i access courses outside nigeia
+
+- intent: faq/ask_exams_vouchers
+  examples: | 
+    - How do I pay for the industry certification exam vouchers?
+
+- intent: faq/ask_more_than
+  examples: | 
+    - Can I take more than one course at the same time?
+    - Can I enroll in more than one course at the same time?
+    - Can I take more than one program at the same time?
+
+- intent: faq/ask_register_acad
+  examples: | 
+    - Do you need O” level result to register for NITDA ACADEMY?
+    - is there any requirement for enrolling in nitda academy
+    - academy requirement
+
+- intent: faq/ask_assistance_acad
+  examples: | 
+    - Who should I contact for assistance in NITDA Academy?
+    - enquiries about nitda academy
+    - questions on academy
+    - questions about NART
+    - enquiries about NART
+    - helpline for nitda academy
+    - helpline for nart
+    - questions on e-learning
+
+- intent: faq/ask_nart
+  examples: | 
+    - What is NART?
+    - nart
+    - does nitda have an academy
+    - who is nart
+    - NITDA Academy For Research And Training
+
+#Mr Aminu
+- intent: faq/ask_yclr
+  examples: | 
+    - Why does a Federal Public Institution need to submit its projects to NITDA for Clearance?
+    - reason for it project clearance
+
+- intent: faq/ask_proclearance
+  examples: | 
+    - What type of project should a Federal Public Institution submit for Clearance?
+    - kind of projects for clearance?
+
+- intent: faq/ask_submit_clearance
+  examples: | 
+    - federal pubic institution send its IT projects for clearance?
+    - how to send projects for clearance
+    - where to send it projects for clearance
+
+- intent: faq/ask_proposedclearance
+  examples: | 
+    - What is the minimum estimated amount for a Federal Public Institution’s proposed IT project requires submission for Clearance by NITDA?
+    - least time for project submission for clearance
+
+- intent: faq/ask_stageclearance
+  examples: | 
+    - At what stage is a Federal Public Institution expected to submit its IT projects to NITDA for Clearance?
+    - project level required for clearance 
+    - project stage for clearance
+
+- intent: faq/ask_clearance_team
+  examples: | 
+    - How long does it take to obtain the clearance?
+    - how long is the clearance
+    - duration of clearance
+    - How long does it take to get an it clearance certificate?
+    - clearance time
+    - time taken for clearance
+
+- intent: faq/ask_conditional_clearance
+  examples: | 
+    - Can a Federal Public Institution proceed with implementation of its IT project with a Conditional Clearance?
+
+#Data Protection
+- intent: faq/ask_reg_achieve
+  examples: | 
+    - What specific objectives is the Regulation meant to achieve?
+    - ndpr objectives
+    - the objectives of ndpr
+
+- intent: faq/ask_scope_ndpr
+  examples: | 
+    - What is the scope of the NDPR.
+    - who and what does ndpr covers
+    - The scope of the Nigeria Data Protection Regulation (NDPR)  
+    - Who does it apply to?
+    - does it apply to me as a data collector, controller, manager, engineer, firm
+    - is nigeria involved with data protection
+    - is nitda involved with data protection
+    - is the agency involved with data protection
+
+
+- intent: faq/ask_ndpr
+  examples: | 
+    - What is ndpr
+    - ndpr
+    - what does ndpr stand for
+    - ndpr mean
+    - The Nigeria Data Protection Regulation (NDPR)?
+
+- intent: faq/ask_pe_expire
+  examples: | 
+    - Has the Regulation come into effect and when does the 6-months grace period expire?
+
+- intent: faq/ask_data_pro
+  examples: | 
+    - When are Data Controllers expected to file data protection audit report?
+    - date for audit report
+    - when data audit report
+
+
+- intent: faq/ask_audit_filing
+  examples: | 
+    - How much are we to pay for audit filing.
+    - fees for filling audit report
+
+- intent: faq/ask_audit_filing_fee
+  examples: | 
+    - How do we pay the Audit Filing fee?
+    - how to makke audit payment
+    - how to make report payment
+
+- intent: faq/ask_audit_report
+  examples: | 
+    - Can Data Controllers and Processors file Audit Reports directly?
+
+- intent: faq/ask_comply_ndpr
+  examples: | 
+    - Our sector regulator has issued a data protection regulation for my sector, are we still expected to still comply with the NDPR?
+    - does the NDPR applies to all sector and every data controller and processor?
+    - as a data controller does the ndpr apply to me
+    - as a data company does the national data protection regulation appy to me
+    - data engineer
+    - data warehouse
+
+- intent: faq/ask_dg
+  examples: |
+    - who heads nitda
+    - National Information Technology Development Agency (NITDA)
+    - who heads the center
+    - the national director
+    - minister of nitda
+    - who's the gd
+    - who is the leader of nitda
+    - who leads nitda
+    - nitda boss
+    - nd nitda
+    - Kashifu Inuwa Abdullahi
+    - who is ND of nitda
+    - ND of the centre
+    - who is the director of NITDA
+    - who is the agency director
+    - who is the dg of nitda
+    - does NITDA have a head
+    - does nitda have a national director
+    - who is kashifu inuwa abdullahi
+    - kashifu Inuwa
+    - Mr. kashifu
+    - Adullahi
+
+
+
+- intent: faq/ask_noncompliance
+  examples: | 
+    - What are the possible consequences of non-compliance with the NDPR
+    - penalty for non-compliance
+    - punishment for failing to comply
+
+- intent: faq/ask_advice_client
+  examples: | 
+    - Does the NDPR limit my right as a professional to advise clients on Data Protection?
+    - does it infringe on my rights as a data professional, company, firm, engineer
+
+#Domain Name
+- intent: faq/ask_gov_domain
+  examples: | 
+    - How do I apply for a Government Domain?
+    - govt domain name application
+       
+- intent: faq/ask_cri_domain
+  examples: | 
+    - What is the criterion for government domain? 
+
+- intent: faq/ask_reg_domain
+  examples: | 
+    - How much does it cost to register a domain?
+    - fees for domain registration 
+    - domain registration fee
+
+- intent: faq/ask_reg_without
+  examples: | 
+    - Can I register a domain without name server as well as Admin and Technical Contacts?
+
+- intent: faq/ask_tec_contact
+  examples: | 
+    - What is the criterion for Administrative and Technical Contact? 
+
+- intent: faq/ask_gov_addre
+  examples: | 
+    - Who should the request for a .gov.ng be addressed to?
+    - .gov.ng complaints
+
+- intent: faq/ask_update_domaian
+  examples: | 
+    - How do I update my domain information and name server?
+
+- intent: faq/ask_mode_comm
+  examples: | 
+    - What are the modes of communication with NITDA?
+    - who do i contact for domain related issues
+
+- intent: faq/ask_domain_approved
+  examples: | 
+    - How do I know if my requested domain will be approved?
+    - is my chosen domain approved
+    - domain name approval 
+
+- intent: faq/ask_domain_avai
+  examples: | 
+    - How can I verify if a particular domain is available?
+    - check for available domain
+    - not used domain names
+      
+ #Mr Ajayi
+- intent: faq/ask_nitdaacro
+  examples: |
+    - What is the meaning of NITDA?
+    - what does the acromyn Nitda mean
+    - what does nitda stands for?
+
+- intent: faq/ask_nitdado
+  examples: |  
+    - What does NITDA do
+    - what happens at nitda
+    # - the purpose of nitda
+
+- intent: faq/ask_nitda_mandate  
+  examples: |
+    - What is the mandate of NITDA?
+    - what is the nitda mandate
+    - agency's mandate
+    - responsibilities of nitda
+    - nitda responsiblities
+    - purpose of nitda
+    - nitda purpose
+    - What are the main Importance of NITDA in nigeria
+    - essence of nitda
+    - purpose of the agency
+    - What are the main Importance of NITDA in nigeria
+
+- intent: faq/ask_nitdasub 
+  examples: |
+    - nitda subdivisions
+    - organogram
+    - What are the subdivisions of NITDA?
+    - what are the structure of nitda
+    - organization structure of nitda
+    - semi-autonomous bodies of nitda
+    - structure of nitda
+
+
+
+- intent: faq/ask_prio
+  examples: |
+    - What are its priorities?
+    - priorities of nitda
+    - priorities of the agency
+
+
+- intent: faq/ask_majorservice
+  examples: |
+    - What are the major services nitda renders?
+    - what services does the agency offer
+    - services at nitda
+
+- intent: faq/ask_accessservices
+  examples: |                                                                                                       
+    - How can i access any of the services stated above?
+    - access to servicess
+    - servisces access
+    - agecy services
+    
+- intent: faq/ask_regtime
+  examples: |
+    - How long does it take to register a .ng domain name?
+    - .ng domain name registration time
+    - duration for domain registration
+    - time taken foe .ng domain registration
+
+- intent: faq/ask_nitda_contact
+  examples: | 
+    - How can i contact NITDA?
+    - how to contact the agency
+    - how to contact the nitda
+    - how can the agency be contacted
+    - what's your contact address
+    - your contact please
+    - who to contact for questions about nitda
+    - your contact adress
+    - nitda helpline
+    - agency contact for help
+    - nitda contact for enquiries
+    - How do I report to NITDA?
+
+- intent: faq/ask_location                                  
+  examples: |
+    - Where is nitda located?
+    - what is the official sit of nitda
+    - Where is nitda HQ located?
+    - what's nitda headquarters adress
+    - where's hq located
+    - physical address
+    - nitda main office address                                                                                                                                                                              
+    - how can i get to the agency
+    - please, can help me with nitda's address
+    - where is nitda
+    - your office address
+    - nitda office adress
+    - nitda addres
+    - adress nitda
+    - how to go to nitda in abuja
+    - Are there other addresses in abuja
+    - other nitda offices
+    - nitda offices in abuja
+    - Does nitda have other offices?
+    - zonal offices addresses
+    - zonal offices in nigeria
+    - does nitda have zonal offices across the country
+    - does nitda have other brances outside nigeria
+    - agency offices outside abuja
+    - offices in six geopolitical zones
+    - nitda brances in other nigerian cities
+    - nitda offices in other places in nigeria
+    - brances in other states
+    - how many NITDA branch in nigeria
+    - zonal offices in other parts of nigeria
+    - zonal branches in other states 
+    - other locations of nitda in nigeria
+    - other addresses
+    - other offices
+    - are there other nitda offices in nigeria
+
+# - intent: faq/ask_offices
+#   examples: |
+#     - Does nitda have other offices?
+#     - zonal offices addresses
+#     - zonal offices in nigeria
+#     - does nitda have zonal offices across the country
+#     - does nitda have other brances outside nigeria
+#     - agency offices outside abuja
+#     - offices in six geopolitical zones
+#     - nitda brances in other nigerian cities
+#     - nitda offices in other places in nigeria
+#     - brances in other states
+#     - how many NITDA branch in nigeria
+#     - zonal offices in other parts of nigeria
+#     - zonal branches in other states 
+#     - other locations of nitda in nigeria
+#     - other addresses
+#     - other offices
+#     - are there other nitda offices in nigeria
+
+- intent: faq/ask_nitda_act
+  examples: |
+    - Does nitda have an act?
+    - what is the Nitda act
+    - the act that established nitda
+
+
+- intent: faq/ask_nitdalicense
+  examples: |
+    - What are the processes to get nitda certification/licensing for my company?
+
+- intent: faq/ask_interventionprog
+  examples: |
+    - Does nitda have any interventions programs?
+    - nitda programs
+    - nitda CSR programs
+    - nitda assistance programmes
+    - nitda corporate social responsibility intervention
+
+
+- intent: faq/ask_scholarship
+  examples: |
+    - Is the scholarship program currently on?
+    - when will the scholarship be on?
+
+- intent: faq/ask_applyintervention
+  examples: |
+    - How can i apply for any of the intervention programs?
+    - intervention program application
+      
+
+- intent: faq/ask_wheredept
+  examples: |
+    - What are the departments/units domicile in NITDA?
+    - units inside nitda
+    - units in the agency headquaters
+    - departments at the agency
+
+- intent: faq/ask_supmin
+  examples: |
+    - Which is NITDA’s supervising ministry?
+    - who supervises nitda, agency
+    - what ministry oversee nitda
+    - is nitda under which ministry
+    - NITDA is under which ministry
+    - agency is under which ministry  
+    - NITDA supervizing ministry
+    - which ministry supervises nitda
+       
+
+- intent: faq/ask_min
+  examples: |
+    - which minister supervises nitda
+    - who is the minister controlling nitda
+    - minister incharge of nitda
+    - who supervises nitda
+
+- intent: faq/ask_contactcerttime
+  examples: |
+    - How long would it take me to get a provisional certificate for contractors/service providers, and the substantive certificate?
+
+- intent: faq/ask_subsidiaries
+  examples: |
+    - Does NITDA have subsidaries?
+    - the agency subsidiaries
+    - its subsidiaries
+
+- intent: faq/ask_obligation
+  examples: |
+    - What is nitda obligation to their stakeholders?
+    - What is the agency obligation to its customers?
+
+- intent: faq/ask_vision
+  examples: |
+    - What IS NITDA vision?
+    - what is its vision
+    - what is the vision of the agency
+
+- intent: faq/ask_mission
+  examples: |
+    - What is its mission?
+    - nitda mission
+    - agency's mission
+
+- intent: faq/ask_nitda_estab
+  examples: |
+    - When was nitda established
+    - when was the agency created
+    - on what day was it established
+    - nitda created
+    - nitda launch
+    
+
+- intent: faq/ask_g
+  examples: |
+    - How long is it estimated before 5G networks become mainstream in Nigeria?
+    - when will nigeria have 5g network
+    - when is 5g be available in nigeria
+
+- intent: faq/ask_vpn
+  examples: |
+    - Is the usage of Virtual Private Networks (VPN) legal?
+    - is vpn legal in nigeria
+    - can i use vpn
+    - is the use of VPN allowed?
+             
+- intent: faq/ask_sgfpro
+  examples: |
+    - DOES THE SGF DEPARTMENT RECEIVE PROPOSALS FOR THE DEVELOPMENT OF NEW STANDARDS, GUIDELINES AND FRAMEWORK?
+    - CAN INDIVIDUALS, ORGANISATIONS AND OTHER BODIES SUBMITT PROPOSALS FOR THE DEVELOPMENT OF NEW STANDARDS GUIDELINES AND FRAMEWORKS?
+
+- intent: faq/ask_handles
+  examples: | 
+    - social media handles
+    - how to contact you on social media
+    - social media contacts
+    - social media address
+    - social media accounts
+    - social media platforms
+    - nitda social media address
+
+- intent: faq/ask_role
+  examples: |
+    - what's the role of nitda
+    - role of the agency
+    - nitda roles
+    - what the future prospect of nitda
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

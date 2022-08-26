@@ -1,0 +1,13 @@
+name: botchata
+autocreate: true
+image: rasa-server:latest
+# image: rasa-actions-server:latest
+command: bash
+volumes:
+- /root/.cache/pip
+sync:
+- .:/app
+forward:
+- 8080:8080
+reverse:
+- 9000:9000

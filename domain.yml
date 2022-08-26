@@ -1,0 +1,502 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- faq:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Good day, welcome to NITDA. How may I help you?
+  utter_out_of_scope:
+  - text: Sorry, I'm not sure of your request?
+  utter_goodbye:
+  - text: Bye, thanks for visiting NITDA.
+  utter_default:
+  - text: |
+      I am sorry, I don’t understand the question. You can reach our helpline on +2348168401851 or email: info@nitda.gov.ng for further clarification.
+  utter_iamabot:
+  - text: I am a Virtual Assistant, powered by NITDA.
+  utter_faq/ask_email:
+  - text: info@nitda.gov.ng.
+  utter_faq/ask_phone:
+  - text: +234 80 168 401 851
+  utter_faq/ask_complain:
+  - text: All complaints concerning the registration process can be sent to the Agency mail info@nitda.gov.ng that is managed by the Servicom Unit or to the registration desk officer.
+  utter_faq/ask_ncair:
+  - text: NCAIR - National Centre for Artificial Intelligence and Robotics is one of the National Information Technology Development Agency's special purpose vehicles created to promote research and development on emerging technologies and their practical application in areas of Nigerian national interest.
+  utter_faq/ask_nitda:
+  - text: National Information Technology Development Agency (NITDA) is a public service institution established by NITDA Act 2007 as the ICT policy implementing arm of the Federal Ministry of Communications and Digital Economy of the Federal Republic of Nigeria.
+  utter_faq/ask_nitdaacronm:
+  - text: NITDA simply means National Information Technology Development Agency.
+  utter_faq/ask_opentoeveryone:
+  - text: NITDA is open to all individual who are interested in ICT, digital economy, digital innovations, entrepreneurship, and emerging technologies through partnerships and collaborations.
+  utter_faq/ask_applyjob:
+  - text: At the moment, the agency is not recruiting. Vacancies shall be advertised in the National newspapers and on NITDA website at https://nitda.gov.ng/disclaimer/.  
+  utter_faq/ask_internship:
+  - text: 'Yes, you can apply for an internship at NITDA. Get a reference letter from your institution and submit it to NITDA’s HQ office at Area 11, 28 Port Harcourt Crescent, Off Gimbiya St, Garki, Abuja. For more information on similar opportunities, kindly follow us on our social media platforms on Twitter, Koo, Facebook, Instagram, and LinkedIn via @NITDANigeria or visit our website: www.nitda.gov.ng.'
+  utter_faq/ask_posttoncair:
+  - text: Yes, however, NYSC office is responsible for posting coppers to any government establishments.
+  utter_faq/ask_assist:
+  - text: NITDA assists start-ups in Nigeria through various initiatives. For more information on similar opportunities, kindly follow us on our social media platforms on Twitter, Koo, Facebook, Instagram, and LinkedIn via @NITDANigeria.
+  utter_faq/ask_sell:
+  - text: No, but we can partner in developing the idea and link up with prospective buyer.
+  utter_faq/ask_elearning:
+  - text: Yes, to access our e-learning resources kindly visit www.academy.nitda.gov.ng.
+  utter_faq/ask_accept_interns:
+  - text: |
+        Yes, you can apply for internship at NITDA. Get a reference letter from your institution and submit to NITDA’s office. Area 11, 28 Port Harcourt Crescent, Off Gimbiya St, Garki, Abuja. For more information on similar opportunities kindly follow us on our social media platforms on Twitter, Koo, Facebook, LinkedIn via @NITDANigeria or visit our website: www.nitda.gov.ng.
+  utter_faq/ask_website:
+  - text: www.nitda.gov.ng.
+  utter_faq/ask_location:
+  - text: |
+      NITDA HQ is located at No. 28, Port Harcourt Crescent, Off Gimbiya Street, P.M.B 564, Area 11, Garki, Abuja, Nigeria.
+      The other offices locations in Abuja are:
+      * Plot No. 790, Cadastral zone B03, Wuye, Abuja.
+      * N0. 5 Agatu Crescent, off Gimbiya street, Area 11 Garki, Abuja.
+      * No. 5 Donau Crescent off Amazone street, Maitama, Abuja.
+      NITDA can also be located at the following zonal offices:
+      * South West office: No. 9 Kofo Abayomi Street Victoria Island, Lagos State. Email: swzo@nitda.gov.ng. Phone: +2348168401851
+      * South-South office: No. 5 Mission Avenue, Opposite Trans-Amadi Industrial Layout, Port Harcourt, Rivers State. Email: sszo@nitda.gov.ng. Phone: +2348168401851
+      * North West: Plot No. 168 Sheik Nasiru Kabara Housing Estate, Kano State. Email: nwzo@nitda.gov.ng. Phone: +2348168401851
+      * North East: Plot No. BA/15917, AShaka Road, Opposite Federal Teaching Hospital, Gombe State. Email: nezo@nitda.gov.ng. Phone: +2348168401851
+  utter_faq/ask_open_close_time:
+  - text: NITDA opens from 8:30am to 4:30pm weekdays.
+  utter_faq/ask_students_program:
+  - text: We are happy to learn that you are interested in our students’ programs, kindly follow us on our social media platforms for possible advert on initiatives dedicated for students on Twitter, Koo, Facebook, Instagram, and LinkedIn via @NITDANigeria.
+  utter_faq/ask_private_colaboration:
+  - text: Yes, NITDA engages in collaborative partnerships with both public and private institutions.
+  utter_faq/ask_access_ncair_learning:
+  - text: We are encouraged to learn of your plan for further skills development, Kindly visit www.academy.nitda.gov.ng for our educational resources.
+  utter_faq/ask_eligibility:
+  - text: NITDA is open to all individuals who are interested in ICT, Artificial Intelligence and Robotics, research & development in areas of emerging technologies through partnership and collaboration.
+  utter_faq/ask_events:
+  - text: All NITDA events can be found at https://nitda.gov.ng/events/category/nitda-events/list/. Also, announcement will be made on our social media platforms on Twitter, Koo, Facebook, Instagram, and LinkedIn via @NITDANigeria.
+  utter_faq/ask_funding:
+  - text: NITDA provides opportunities for startups to gain exposure and possibly funding from investors through our programs.
+  utter_faq/ask_events_requirements:
+  - text: Requirements are always included in our adverts, kindly follow our social media platforms on Twitter, Koo, Facebook, Instagram, and LinkedIn via @NITDANigeria for upcoming programs announcement.
+  utter_faq/ask_certification:
+  - text: Yes, at NITDA we offer numerous training programs. Kindly visit https://academy.nitda.gov.ng. Upon completion, a certificate is issued to successful participants.
+  utter_faq/ask_organize_training:
+  - text: Yes, through its various initiatives such as Workshops, Conferences as well as collaboration with organizations/institutions.
+  utter_faq/ask_training_fee:
+  - text: All NITDA trainings or capacity building programs are FREE.
+  utter_faq/ask_help:
+  - text: All enquiries can be sent to the Agency mail info@nitda.gov.ng that is managed by the Servicom Unit.
+  utter_faq/ask_sb:
+  - text: SB4Kids (NITDA STEM Bootcamp for Kids) is a bootcamp designed to inspire young Nigerians in the fields of Science, Technology, Engineering and Mathematics (STEM). NITDA, through the program, engages youngsters between the ages of 8 and 16 in an immersive and well-articulated bootcamp meant to coach and inspire them to imbibe a passion in STEM to create an early interest in digital technologies that will hopefully shape their future careers in these fields.
+  utter_faq/ask_kidsprg:
+  - text: Glad you asked! We have NITDA STEM Bootcamp for Kids (SB4Kids) and STEM 101 programmes.
+  utter_faq/ask_online:
+  - text: Yes, online training can be done at https://academy.nitda.gov.ng.
+  utter_faq/ask_tour:
+  - text: Yes, we do give a tour to schools that apply to the centre for excursion.
+  utter_faq/ask_geo:
+  - text: Yes, we do have Sb4kids program in the six (6) geopolitical zones.
+  utter_faq/ask_stsb4kids:
+  - text: Sb4kids program normal take place during the long holiday August- September
+  utter_faq/ask_sb_acts:
+  - text: |
+      We have a lot of activities in the SB4kids program which include: Virtual reality, Artificial intelligence, Digital Literacy, 3D printing Coding and other emerging technology activities for kids.
+  utter_faq/ask_sb_ages:
+  - text: SB4kids and other related programs are for kids between the ages of 8 and 16 years.
+  utter_faq/ask_aides:
+  - text: Yes, we do have designated aid for touring the agency.
+  utter_faq/ask_photo:
+  - text: Yes. There is no photo restrictions in the centre.
+  utter_faq/ask_work_interns:
+  - text: Yes, interns are involved in research and receive support in their own personal projects.
+  utter_faq/ask_acceptance:
+  - text: Congratulations! Just make your way to the center for orientation and documentation.
+  utter_faq/ask_equipment:
+  - text: All you need is a laptop for your convenience, but it’s not compulsory.
+  utter_faq/ask_sec:
+  - text: Yes, you can join the nano-internship program.
+  utter_faq/ask_comp:
+  - text: It is not compulsary.
+  utter_faq/ask_doc:
+  - text: For NYSC corps members, your posting letter must be sent to NITDA. For SIWES, a letter from your school must be sent to NITDA, addressed to the DG and copying the National Director, NCAIR. For NANO internships, a form can be picked up at the NCAIR office. Approval for NANO internships is at the discretion of the National Director, NCAIR.
+  utter_faq/ask_inview:
+  - text: The potential intern will be questioned by a few agency employees about their own relevant experience and what the agency does.
+  utter_faq/ask_standard:
+  - text: |
+      * The Standard, Guidelines and Frameworks Department is saddled with the responsibility to carry out the Agency’s mandate of creating and developing Standards, Guidelines and Frameworks for the purpose of effective governance of Information Technology in Nigeria.
+      * The Department was created for the purpose of initiating, developing and reviewing of Information Technology Standards, Guidelines and Frameworks for effective governance.
+      * The SGF Department has the mandate to improve Standards of Information Technology products and services by creating awareness and providing a protective platform for consumers of Information Technology products and services.
+  utter_faq/ask_reg:
+  - text: Regulatory Instruments can be found on the NITDA website at https://nitda.gov.ng/draft-regulatory-instruments/.
+  utter_faq/ask_units:
+  - text: |
+      The NITDA SGF department has the following units: 
+       * Standards and Guidelines Unit
+       * Consumer Protection Unit
+       * Dispute Management and Resolution Unit
+       * Frameworks Development Unit
+       * IT Asset Managemet
+  utter_faq/ask_nitdaunits:
+  - text: |
+      NITDA has the following departments and units: 
+       * AUDIT 
+       * BDMU
+       * CAER
+       * CPS
+       * Cybersecurity
+       * DED 
+       * E-GDR
+       * FMC
+       * FOI
+       * HRA
+       * ITIS 
+       * LU
+       * NCAIR
+       * PMU
+       * PU
+       * ONDI 
+       * R&D
+       * SDU
+       * SERVICOM
+       * SGF
+       * ZOD
+
+  utter_faq/ask_consumer_protection:
+  - text: NITDA has a consumer protection unit that address any complaints from IT consumers.
+  utter_faq/ask_nitda_comp:
+  - text: Kindly visit the NITDA Consumer Complaint Portal at https://complaint.nitda.gov.ng.
+  utter_faq/ask_freInfo:
+  - text: |
+      The Freedom of Information Act 2011, provides public right of access to information held by public authorities. It does this in two ways:
+         * Public authorities are obliged to publish certain information about their activities;
+         * Members of the public are entitled to request information from public authorities.
+  utter_faq/ask_whenAct:
+  - text: The Freedom of Information Act 2011 was passed by the National Assembly on 24th May 2011 and assented by President Good-luck Jonathan on 28th May, 2011.
+  utter_faq/ask_whyAct:
+  - text: |
+      The Act includes the following provisions:
+        * To make public institutions information and records freely accessible by the citizens.
+        * To ensure information provided by public institutions are accountable.
+        * To ensure information and records are transparent to the extent consistent with the public interest.   
+        * To ensure protection of serving public officers from adverse consequences and also to protect personal privacy. 
+  utter_faq/ask_what_Act:
+  - text: |
+      The unit performs the following tasks:
+        * To sensitize staff and create awareness on the implementation of FOIA, 2011.
+        * To advise and guide Management on FOIA and related matters.
+        * To ensure strict compliance of the Act.
+        * Ensure information are monitored for prompt dissemination.  
+        * Ensure FOI records are properly kept and managed.
+        * Liaise with stakeholders and relevant departments/units for information gathering.
+        * Rendition of Annual Returns.
+  utter_faq/ask_why_FOIA_impo:
+  - text: |
+      * Freedom of Information Act, 2011 plays an important role in keeping government accessible, available, transparent and accountable.
+      * It expose a wide range of government misconduct, waste, threats and safety.
+      * FOIA creates and encourages open governance.
+  utter_faq/ask_what_steps:
+  - text: |
+      * FOI Application or Request should be submitted through the office of the Director General of NITDA, NITDA email and FOI email.
+      * Applicant email address and phone number should be indicated for response.
+  utter_faq/ask_benefits_FOI_NITDA:
+  - text: As an apex IT Agency, we create an enabling environment where Nigerians develop, adopt and derive value from digital technology. This means information is easily accessible, available and transparent through digital technology.
+  utter_faq/ask_how_sect_FOI:
+  - text: |
+      There are 32 Sections contain in the Act. They are as follows:
+       * Right of access to records
+       * Information about public institution
+       * Request for access to records
+       * Time for granting or refusing application
+       * Transfer of application
+       * Extension of time limit for granting or refusing application
+       * Where access is refused
+       * Fees 
+       * Record keeping and maintenance of records
+       * Destruction or falsification of records
+       * Exemptions of international affairs and defense
+       * Exemptions of law enforcement and investigation
+       * Training of staff/officials on the right information and effective implementation of this Act
+       * Exemption of personal information
+       * Exemption of third-party information
+       * Exemption of personal or other privileges conferred by law
+       * Exemptions of course or research material
+       * Severability 
+       * Denial by a public institution to disclose information or records
+       * Judicial review
+       * Hearing in a summary way
+       * Access to information by the court
+       * Court to take precautions against disclosing information
+       * Burden of proof
+       * Order to disclose information
+       * Exempted materials 
+       * Protection of public officers
+       * Documents under classification
+       * Submission of reports
+       * Complimentary procedures
+       * Interpretation
+       * Citation
+  utter_faq/ask_nitdef:
+  - text: The NITDEF scholarship scheme aims at promoting proficiency in Information Technology at Doctorate and Masters Levels. Its application comes out once a year and the call for application is made in some Nigerian dailies, NITDA website and all its social media handles. You can apply when the announcement is made at https://nitda.gov.ng/scholarship/.
+  utter_faq/ask_nitdef_form:
+  - text: No. The NITDEF Scholarship Scheme form is free and you don’t need money to obtain it.
+  utter_faq/ask_nitdef_apply:
+  - text: The application for NITDEF Scholarship Scheme is done online at https://nitda.gov.ng/scholarship/.
+  utter_faq/ask_nitdef_qualify:
+  - text: Every Nigerian is qualified to apply for the scheme provided they have the necessary requirements. For the requirements, Kindly visit https://nitda.gov.ng/scholarship/.
+  utter_faq/ask_nitdef_cat:
+  - text: Every Nigerian that studies computer related courses and law that graduated with minimum of 2.1 from reputable university in Nigeria or abroad. For the requirements, Kindly visit https://nitda.gov.ng/scholarship/.
+  utter_faq/ask_nitdef_exam:
+  - text: The examination mode is Computer Based Test (CBT) and oral interview for the successful candidate afterward.
+  utter_faq/ask_roadmap:
+  - text: The NITDA SRAP document can be found at https://nitda.gov.ng/nitda-strategic-roadmap-and-action-plan-srap-2021-2024/.
+  utter_faq/ask_datedignaija:
+  - text: The DIGITAL NIGERIA date will be published on on our social media platforms on Twitter, Koo, Facebook, Instagram, and LinkedIn via @NITDANigeria.
+  utter_faq/ask_dignaija:
+  - text: Digital Nigeria is programme which aims to empower innovators and entrepreneurs with the requisite skills to thrive in the emerging digital economy. Visit https://digitalskills.gov.ng/ for more details about the program.
+  utter_faq/ask_nitda_acad:
+  - text: The academy has been providing robust online training and research opportunities for many within and outside the shores of Nigeria.
+  utter_faq/ask_exams_vouchers:
+  - text: Payment is made directly to an approved bank or to a designated account.
+  utter_faq/ask_more_than:
+  - text: Yes it depends on the amount of dedication you can give to the multiple course you enrolled for.
+  utter_faq/ask_register_acad:
+  - text: No, you can just register on the website www.academy.nitda.gov.ng.
+  utter_faq/ask_assistance_acad:
+  - text: Please, contact the IT Infrastructure and Solutions Department of the organisation. Call Now +2348168401851, Send Message academy@nitda.gov.ng
+  utter_faq/ask_nart:
+  - text: NART is the NITDA Academy for Research and Training.
+  utter_faq/ask_yclr:
+  - text: |
+      The Act that establishes NITDA mandates it to be the clearing house for all Information Technology (IT) procurement and services in the public sector.
+      This mandate was reiterated through a circular issued by the Federal Government with number
+      59736/S.2/C.II/125 dated 31st August, 2018, about the need for all FPIs and other government
+      establishments to relate with and obtain prior approval from NITDA for the implementation of their
+      IT projects.
+  utter_faq/ask_proclearance:
+  - text: Only IT related projects should be submitted to NITDA for clearance.
+  utter_faq/ask_submit_clearance:
+  - text: All projects are expected to be submitted through the IT Projects Clearance portal via the URL https://clearance.nitda.gov.ng.
+  utter_faq/ask_proposedclearance:
+  - text: Currently, there is no minimum estimated amount. All proposed IT projects are expected to be submitted to NITDA for Clearance.
+  utter_faq/ask_stageclearance:
+  - text: All proposed IT projects are expected to be submitted to NITDA for Clearance at their Conceptualization stage.
+  utter_faq/ask_clearance_team:
+  - text: |
+      The IT Projects Clearance team will communicate to the FPI within 21 working days.
+      For more information, kindly read Guidelines for Clearance of Information Technology (IT) Projects
+      by Ministries, Departments and Agencies (MDAs).
+      The Guideline can be downloaded at
+      https://nitda.gov.ng/wp-content/uploads/2020/11/Guidelines-For-Clear-ance-Of-InformationTechnology-IT-Projects-By-Public-Institutions21.pdf
+  utter_faq/ask_conditional_clearance:
+  - text: NO. The Conditional Clearance cannot be used by Federal Public Institution for implementation of its IT project.
+  utter_faq/ask_dg:
+  - text: NITDA is headed by a Director-General\CEO in person of Mr. Kashifu Inuwa Abdullahi, CCIE. More information maybe found at https://nitda.gov.ng/kashifu-inuwa-abdullahi-ccie/.
+  utter_faq/ask_reg_achieve:
+  - text: The objectives of the NDPR are data privacy protection; secure exchange of data; improve business environment and create sustainable jobs.
+  utter_faq/ask_pe_expire:
+  - text: The Regulation came into effect on 25th January, 2019. A major advertorial was carried in four major National dailies between 14th and 15th of February, 2019 to sensitize people on this. The grace period elapsed by 25th of July, 2019 and extended.
+  utter_faq/ask_data_pro:
+  - text: Except for other specified purposes or request by NITDA, Data Controllers are expected to file their data audit report annually before the 15th of March of the following year.
+  utter_faq/ask_audit_filing:
+  - text: |
+      * Filing of Report of less than 5,000 Data Subjects is ₦10,000.
+      * Filing of Report of more than 5,000 Data Subjects is ₦20,000.
+  utter_faq/ask_audit_filing_fee:
+  - text: Pay into NITDA TSA account. In the Description, write- XXXXXX LTD AUDIT FILING. (Note that the GIFMIS number is not a mandatory field)
+  utter_faq/ask_audit_report:
+  - text: NO. filing of audit report must be done through a DPCO.
+  utter_faq/ask_ndpr:
+  - text: The Nigeria Data Protection Regulation (NDPR) was issued in January 2019 pursuant to Section 6 (a,c) of the NITDA Act 2007. The Regulation is the current National law on data protection in Nigeria. Please visit https://ndpr.nitda.gov.ng/ for further details.
+  utter_faq/ask_scope_ndpr:
+  - text: It applies to public and private sector processing personal data within and outside Nigeria.
+  utter_faq/ask_comply_ndpr:
+  - text: Yes, the NDPR applies to all sector and every data controller and processor.
+  utter_faq/ask_noncompliance:
+  - text: |
+      * Breach of personal data by a non-compliant Controller or Processor would attract criminal and administrative sanctions
+      * Data Subjects have the right to take civil actions against the Controller on the basis of the NDPR
+      * Business implication of non-compliance include brand image damage, loss of customers, restriction from international market opportunity; 
+      * Lack of support from national Supervisory Authority against foreign investigation of breach by an international authority.
+  utter_faq/ask_advice_client:
+  - text: NO. Professionals are not restricted from performing their professional duties; however, only licensed DPCOs can provide verification statement on an audit report. Also, request for recognition of data protection training, services or products is predicated on licensing as a DPCO except management deems otherwise.
+  utter_faq/ask_gov_domain:
+  - text: |
+      There are two ways to register a GOV.NG domain name as provided for on NITDA website https://nitda.comepower.com.ng/gov domain
+      registration. You can either send a written application to National Information Technology Development Agency (NITDA) or Nigeria Internet Registration Association (NIRA) through any of the accredited registrars. 
+      See https://www.nira.org.ng/accredited registrars for the list of accredited registrars and you may contact them.
+  utter_faq/ask_cri_domain:
+  - text: All websites/portal of government constituents at all levels (Federal, State and Local governments) or specialized projects of government that would last for 18 months or more are required to register on.GOV.NG zone.
+  utter_faq/ask_reg_domain:
+  - text: Currently, NITDA charges no fee for.GOV.NG domain name registration and update. However, if a.GOV.NG domain name is registered through a NiRA accredited registrar, it is expected that the registrar would charge a consultancy fee. The charged fee varies from one registrar to another.
+  utter_faq/ask_reg_without:
+  - text: No, this is not possible. The information is needed to populate the registry at the time of creating the domain.
+  utter_faq/ask_tec_contact:
+  - text: The admin contact must be a member of staff of the institution/MDA while the technical contact can either be a member of staff of the MDA or a consultant to the institution/MDA where a technical staff is not available.
+  utter_faq/ask_gov_addre:
+  - text: The letter must be addressed to the Director General of NITDA and a scanned/Advance copy can be submitted to domains@nitda.gov.ng while the hard copy is sent to NITDA.
+  utter_faq/ask_update_domaian:
+  - text: To update registration information through NITDA, an authorization letter containing the information to be updated should be communicated to NITDA through the email domains@nitda.gov.ng The letter should be signed by the most senior officer and must include the contact phone number for verification.
+  utter_faq/ask_mode_comm:
+  - text: NITDA uses domains@nitda.gov.ng and phone numbers 08140504418, 08119131085 and 08119130085 for domain management related issues.
+  utter_faq/ask_domain_approved:
+  - text: |
+        Domains are in levels. For example nitda.gov.ng is a third label domain while judiciary.kn.gov.ng is a fourth level domain. Federal MDAs are only allowed to be on third level domain, while agencies of state government and local government must be on the forth level and the zone of their states. Available zones are * ab.gov.ng * ad.gov.ng * ak.gov.ng * an.gov.ng * be.gov.ng * bo.gov.ng * bu.gov.ng * by.gov.ng * cr.gov.ng * dl.gov.ng * eb.gov.ng * ed.gov.ng * ek.gov.ng * en.gov.ng * gm.gov.ng * im.gov.ng * jg.gov.ng * kb.gov.ng * kd.gov.ng * kg.gov.ng * kn.gov.ng * kt.gov.ng * kw.gov.ng * lg.gov.ng * na.gov.ng * ni.gov.ng * og.gov.ng * on.gov.ng * os.gov.ng * oy.gov.ng * pl.gov.ng * rv.gov.ng * sk.gov.ng * tr.gov.ng * yb.gov.ng * zm.gov.ng * abj.gov.ng
+  utter_faq/ask_domain_avai:
+  - text: You will need to visit https://whois.nic.net.ng to check the availability of any domain of your choice before you make your request.
+  utter_faq/ask_nitdaacro:
+  - text: National Information Technology Development Agency.
+  utter_faq/ask_nitdado:
+  - text: NITDA is committed to implement the National Digital Economy Policy for digital Nigeria.
+  utter_faq/ask_nitda_mandate:
+  - text: NITDA's mandate is to create a framework for the planning, research, development, standardization, application, coordination, monitoring, evaluation and regulation of information technology practices in Nigeria.
+  utter_faq/ask_prio:
+  - text: The priorities of the agency are developmental regulation, digital literacy and skills, solid infrastructure, service infrastructure, digital services development and promotion, software infrastructure, digital society and emerging technologies & indigenous content development and adoption.
+  utter_faq/ask_majorservice:
+  - text: |
+      The major services it renders includes the following:
+      * IT Project Clearance
+      * Data Protection
+      * Licensing of Original Equipment Manufacturers(OEMS)
+      * Software Testing
+      * Domain Registration
+      * Registration of Contractors & Service Providers
+      * The National Public Key Infrastructure (NPKI)
+  utter_faq/ask_accessservices:
+  - text: |
+      To access any or all of the services listed above, visit:
+      * IT project clearance- https://nitda.gov.ng/it-project-clearance/ 
+      * Data protection- https://nitda.gov.nSg/data-protection/ 
+      * Licensing of Original Equipment Manufacturers(OEMS) - https://nitda.gov.ng/certification-licensing-of-oems/
+      * Software testing
+      * Domain registration- https://nitda.gov.ng/gov-ng-domain-registration 
+      * Registration of contractors & service providers- https://nitda.gov.ng/registration-of-contractors-service-providers/
+      * The National Public Key Infrastructure (NPKI)- https://nitda.gov.ng/the-national-public-key-infrastructure-npki/
+  utter_faq/ask_regtime:
+  - text: 24 hours, if all the requirements are met.
+  utter_faq/ask_nitda_contact:
+  - text: |
+      You can contact us through the following:
+      * Phone: +22347052420189, +2348168401851
+      * Email: info@nitda.gov.ng
+#   utter_faq/ask_offices:
+#   - text: |
+#      NITDA can also be located at:
+#       * South West office: No. 9 Kofo Abayomi Street Victoria Island, Lagos State. Email: swzo@nitda.gov.ng. Phone: +2348168401851
+#       * South-South office: No. 5 Mission Avenue, Opposite Trans Amadi, Rivers State. Email: sszo@nitda.gov.ng. Phone: +2348168401851
+#       * North West: Plot No. 168 Sheik Nasiru Kabara Housing Estate, Kano State. Email: nwzo@nitda.gov.ng. Phone: +2348168401851
+#       * North East: Plot No. BA/15917, AShaka Road, Opposite Federal Teaching Hospital, Gombe State. Email: nezo@nitda.gov.ng. Phone: +2348168401851
+  utter_faq/ask_nitda_act:
+  - text: There is the NITDA act 2007. More information maybe found at https://nitda.gov.ng/nitda-act/.
+  utter_faq/ask_nitdalicense:
+  - text: You would be required to download an applicantion form from https://nitda.gov.ng/certification-licensing-of-oems/ and fulfill all the requirements as stipulated.
+  utter_faq/ask_interventionprog:
+  - text: |
+      Yes, NITDA has the following intervention programs: 
+      * Capacity Buildings
+      * Wide Area Nertworking
+      * Digital Job Creation Centres
+      * E_learning Facilities
+      * Scholarship
+      * Vitual Library
+      * NITDA Information Technology Hubs
+  utter_faq/ask_scholarship:
+  - text: Not at the moment, the schlarship program is currently on hold. For any update check the scholarship portal at https://nitda.gov.ng/scholarship/.
+  utter_faq/ask_applyintervention:
+  - text: Through a formal application to be addressed to the Director-General.
+  utter_faq/ask_wheredept:
+  - text: |
+      The departments and units domicile in NITDA are:
+      * Corporate Affairs and External Relations unit
+      * Anti-coruption unit
+      * Computer Emergency Readiness and Response(cerrt) unit,
+      * NITDA Zonal Offices Directorate unit,
+      * Budget Development and monitoring unit,
+      * IT Asset Management and Quality Assurance unit,
+      * Project Management unit
+      * Special Duties unit,
+      * Internal Audit unit,
+      * Legal Service and Board Matters unit,
+      * Procurment unit,
+      * Servicom unit,
+      * Freedom of Information unit
+  utter_faq/ask_supmin:
+  - text: Ministry of Communications and Digital Economy.
+  utter_faq/ask_contactcerttime:
+  - text: Five (5) working days for probationary certificate; and 6 months for substantive certificate.
+  utter_faq/ask_subsidiaries:
+  - text: |
+      Yes, NITDA has the following subsidaries:
+      * Office of Nigerian Content Development(ONC)
+      * Office for ICT Inovation and Enteprenuership(OIIE)
+      * National Center for Artificial Intelligence and Robotics(NCAIR)
+      * National Outsourcing Programme Office(NOPO)
+      * National Public Key Infrastructure Office(NPKIO)
+      * Office for IT Research and Development
+  utter_faq/ask_obligation:
+  - text: NITDA is comitted to providing their customers with efficient, reliable, affordable, and safe competitive market enviroments at each points of service delivery.
+  utter_faq/ask_vision:
+  - text: NITDA’s vision is to proactively facilitate the development of nigeria into a sustainable digital economy.
+  utter_faq/ask_mission:
+  - text: As an apex Agency, NITDA creates an enabling enviroment where nigerians will develop, adopt, and derive value from digital technology.
+  utter_faq/ask_nitda_estab:
+  - text: The National Information Technology Development Agency (NITDA) was established on 18 April 2001.
+  utter_faq/ask_nitdasub:
+  - text: See the agency’s organogram at https://nitda.gov.ng/organogram.
+  utter_faq/ask_min:
+  - text: Prof. Isa Ali Pantami, FNCS, FBCS, FIIM, MCPN
+  utter_faq/ask_g:
+  - text: The Minister of Communications and Digital Economy, Prof. Isa Pantami, has assured that by 2022, Nigeria would have the largest 5G.
+  utter_faq/ask_vpn:
+  - text: It is completely legal to use VPN in Nigeria.
+  utter_faq/ask_sgfpro:
+  - text: |
+      Yes, The Agency may receive a proposal from an Originator in writing to develop any Rule subject.
+      Originator may include but not limited to the following:
+      * professional bodies; 
+      * Industry Stakeholders; 
+      * Commissions or Agencies;
+      * Advisory Committees; 
+      * Any Department of the Agency; or 
+      * Any member of the Public.
+
+  utter_faq/ask_handles:
+  - text: |
+      Please follow us on our social media platforms on Twitter, Facebook, Instagram, and LinkedIn via @NITDANigeria.
+
+  utter_faq/ask_work:
+  - text: Anybody can work at NITDA. Vacancies shall be advertised in the National newspapers and on NITDA's website at https://nitda.gov.ng/disclaimer/.
+  utter_faq/ask_role:
+  - text: To develop, regulate and advise on Information Technology in the country through regulatory standards, guidelines and policies.
+
+
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_out_of_scope
+- utter_default
+- utter_faq
+- action_default_fallback
+forms: {}
+e2e_actions: []
