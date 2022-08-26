@@ -2,7 +2,7 @@ version: '3.4'
 services:
 
 
-  rasa-server:
+  rasa-server1:
     image: rasa-bot:latest
     build: "./"
     restart: always
@@ -13,12 +13,12 @@ services:
     command: bash -c "rm -rf models/* && rasa train && rasa run --enable-api --cors \"*\" -p 8080"
     working_dir: "/app"
     ports:
-    - '5005:8080'
+    - '5005:8081'
     public: true
     networks:
     - all
 
-  rasa-actions-server:
+  rasa-actions-server1:
     image: rasa-bot:latest
     build: "./"
     volumes:
